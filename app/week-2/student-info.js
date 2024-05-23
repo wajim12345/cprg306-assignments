@@ -2,7 +2,7 @@ import Link from "next/link";
 
 
 export default function StudentInfo(){
-    let linkStyle = ""
+    
     return(
         <div>
             <h1>Jim Wang</h1>

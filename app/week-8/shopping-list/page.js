@@ -31,13 +31,15 @@ export default function Page() {
   const { user } = useUserAuth();
 
   return (
-    <main >
+    <main>
+      <header>
+        <h1 className="text-3xl text-green-600 font-extrabold text-center">
+          Shopping List
+        </h1>
+      </header>
       {user ? (
         <div className="flex bg-black">
           <div className="flex-1">
-            <h1 className="text-3xl text-green-600 font-extrabold text-center">
-              Shopping List
-            </h1>
             <NewItem onAddItem={handleAddItem} />
             <ItemList items={itemList} onItemSelect={handleSetSelectedItem} />
           </div>
